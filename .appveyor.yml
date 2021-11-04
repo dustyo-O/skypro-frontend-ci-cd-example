@@ -1,6 +1,6 @@
-image: Ubuntu1804  # образ для сборки
+image: Ubuntu1804
 
-stack: node 14  # окружение
+stack: node 14
 
 cache: node_modules
 
@@ -15,7 +15,7 @@ for:
       - master
 
   install:
-    - npm install  # команда установки зависимостей
+    - npm install
 
   build: off  # отключаем встроенную в appveyor систему сборки
 
