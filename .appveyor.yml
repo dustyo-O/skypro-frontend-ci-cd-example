@@ -4,10 +4,14 @@ stack: node 14  # окружение
 
 cache: node_modules  # кеширование
 
+environment:
+  access_token:
+    secure: 7is9GJdpn4KBMVwgVKlMO5gObKFOdhTyJ0eCgjNZjALGUhXfzKd1jsqKYxK9xvTQ
+
 for:
 -
   branches:
-    only:
+    except:
       - master
 
   install:
@@ -19,11 +23,15 @@ for:
     - npm run build   # команда сборки
 
   deploy_script:
+    - git config --global credential.helper store
+    - ps: Set-Content -Path "$HOME\.git-credentials" -Value "https://$($env:access_token):x-oauth-basic@github.com`n" -NoNewline
+    - git config --global user.email "a.shleyko@yandex.ru"
+    - git config --global user.name "Alexandr Shleyko"
     - bash ./deploy.sh
 
 -
   branches:
-    except:
+    only:
       - master
 
   install:
