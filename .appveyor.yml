@@ -4,14 +4,10 @@ stack: node 14
 
 cache: node_modules
 
-environment:
-  access_token:
-    secure: w4mfDcktrSV1PCcXouDb0LxkYgApS6TwJNo32I/L6hPWVeDb44ERjSnSyPk2+/1y
-
 for:
 -
   branches:
-    except:
+    only:
       - master
 
   install:
@@ -31,7 +27,7 @@ for:
 
 -
   branches:
-    only:
+    except:
       - master
 
   install:
