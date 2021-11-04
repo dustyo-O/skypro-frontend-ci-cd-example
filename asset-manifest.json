@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/skypro-frontend-ci-cd-example/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/skypro-frontend-ci-cd-example/static/js/main.dc4c2bb3.chunk.js",
+    "main.js.map": "/skypro-frontend-ci-cd-example/static/js/main.dc4c2bb3.chunk.js.map",
+    "runtime-main.js": "/skypro-frontend-ci-cd-example/static/js/runtime-main.66d51a50.js",
+    "runtime-main.js.map": "/skypro-frontend-ci-cd-example/static/js/runtime-main.66d51a50.js.map",
+    "static/js/2.cf2b07b3.chunk.js": "/skypro-frontend-ci-cd-example/static/js/2.cf2b07b3.chunk.js",
+    "static/js/2.cf2b07b3.chunk.js.map": "/skypro-frontend-ci-cd-example/static/js/2.cf2b07b3.chunk.js.map",
+    "static/js/3.86e22397.chunk.js": "/skypro-frontend-ci-cd-example/static/js/3.86e22397.chunk.js",
+    "static/js/3.86e22397.chunk.js.map": "/skypro-frontend-ci-cd-example/static/js/3.86e22397.chunk.js.map",
+    "index.html": "/skypro-frontend-ci-cd-example/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/skypro-frontend-ci-cd-example/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.cf2b07b3.chunk.js.LICENSE.txt": "/skypro-frontend-ci-cd-example/static/js/2.cf2b07b3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66d51a50.js",
+    "static/js/2.cf2b07b3.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.dc4c2bb3.chunk.js"
+  ]
+}
