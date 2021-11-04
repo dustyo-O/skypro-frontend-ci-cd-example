@@ -11,3 +11,6 @@ build: off  # отключаем встроенную в appveyor систему
 
 build_script:
   - npm run build   # команда сборки
+
+deploy_script:
+  - bash ./deploy.sh
