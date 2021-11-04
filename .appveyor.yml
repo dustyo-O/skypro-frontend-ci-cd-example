@@ -4,6 +4,7 @@ stack: node 14  # окружение
 
 cache: node_modules  # кеширование
 
+for:
 -
   branches:
     only:
