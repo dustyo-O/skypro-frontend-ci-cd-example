@@ -17,7 +17,7 @@ for:
   install:
     - npm install
 
-  build: off  # отключаем встроенную в appveyor систему сборки
+  build: off
 
   build_script:
     - npm run build   # команда сборки
