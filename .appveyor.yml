@@ -2,7 +2,7 @@ image: Ubuntu1804  # образ для сборки
 
 stack: node 14  # окружение
 
-cache: node_modules  # кеширование
+cache: node_modules
 
 environment:
   access_token:
