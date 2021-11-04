@@ -6,7 +6,7 @@ cache: node_modules  # кеширование
 
 environment:
   access_token:
-    secure: 7is9GJdpn4KBMVwgVKlMO5gObKFOdhTyJ0eCgjNZjALGUhXfzKd1jsqKYxK9xvTQ
+    secure: w4mfDcktrSV1PCcXouDb0LxkYgApS6TwJNo32I/L6hPWVeDb44ERjSnSyPk2+/1y
 
 for:
 -
