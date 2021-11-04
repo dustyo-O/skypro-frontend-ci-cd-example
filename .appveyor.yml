@@ -27,7 +27,7 @@ for:
     - git config --global user.name AppVeyor
     - git config --global user.email ci@appveyor.com
     - echo "https://$($env:access_token):x-oauth-basic@github.com" > "$HOME/.git-credentials"
-    - bash ./deploy.sh
+    - npx push-dir --dir=build --branch=gh-pages --force --verbose
 
 -
   branches:
