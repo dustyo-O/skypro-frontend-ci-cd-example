@@ -23,10 +23,6 @@ for:
     - npm run build   # команда сборки
 
   deploy_script:
-    - git config --global credential.helper store
-    - ps: Set-Content -Path "$HOME\.git-credentials" -Value "https://$($env:access_token):x-oauth-basic@github.com`n" -NoNewline
-    - git config --global user.email "a.shleyko@yandex.ru"
-    - git config --global user.name "Alexandr Shleyko"
     - bash ./deploy.sh
 
 -

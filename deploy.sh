@@ -9,6 +9,11 @@ cd build
 # если вы публикуете на пользовательский домен
 # echo 'www.example.com' > CNAME
 
+git config --global credential.helper store
+ps: Set-Content -Path "$HOME\.git-credentials" -Value "https://$($env:access_token):x-oauth-basic@github.com`n" -NoNewline
+git config --global user.email "a.shleyko@yandex.ru"
+git config --global user.name "Alexandr Shleyko"
+
 git init
 git add -A
 git commit -m 'deploy'
