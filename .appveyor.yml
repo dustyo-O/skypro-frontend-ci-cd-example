@@ -4,13 +4,32 @@ stack: node 14  # окружение
 
 cache: node_modules  # кеширование
 
-install:
-  - npm install  # команда установки зависимостей
+for:
+-
+  branches:
+    only:
+      - master
 
-build: off  # отключаем встроенную в appveyor систему сборки
+  install:
+    - npm install  # команда установки зависимостей
 
-build_script:
-  - npm run build   # команда сборки
+  build: off  # отключаем встроенную в appveyor систему сборки
 
-test_script:
-  - npm test
+  build_script:
+    - npm run build   # команда сборки
+
+  deploy_script:
+    - bash ./deploy.sh
+
+-
+  branches:
+    except:
+      - master
+
+  install:
+    - npm install  # команда установки зависимостей
+
+  build: off  # отключаем встроенную в appveyor систему сборки
+
+  build_script:
+    - npm run build   # команда сборки
